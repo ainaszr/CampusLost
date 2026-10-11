@@ -1,0 +1,31 @@
+/* LIGHT MODE */
+:root {
+    --bg: #f4f6fa;
+    --card: #ffffff;
+    --text: #111827;
+    --text-secondary: #64748b;
+    --border: #dbe2ea;
+}
+
+/* DARK MODE */
+[data-theme="dark"] {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #ffffff;
+    --text-secondary: #94a3b8;
+    --border: #334155;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.card,
+.panel,
+.content-box {
+    background-color: var(--card);
+    color: var(--text);
+    border-color: var(--border);
+}
